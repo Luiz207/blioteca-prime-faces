@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui" xmlns:pm="http://primefaces.org/mobile">
+
+
+    <h:head>
+        <title>Lar da Letra - Biblioteca</title>
+        <h:outputStylesheet name="css/jsfcrud.css"/>
+    </h:head>
+    <h:body>
+
+        <p:layout fullPage="true">
+            <!-- Topo -->
+            <p:layoutUnit position="north" size="80">
+                <pm:page>
+                    <pm:header title="Header">
+                        <h1> Libary the words - Biblioteca</h1>
+                    </pm:header>
+                </pm:page>
+            </p:layoutUnit>
+            <!-- Fim Topo -->
+
+
+            <!-- Footer -->
+            <p:layoutUnit position="south" size="100">
+                <h3>Developed by Luiz Henrique - 2017</h3>
+            </p:layoutUnit>
+            <!-- Fim Footer -->
+
+
+
+            <p:layoutUnit header="Menu" position="west" size="170">
+                <p:menu >
+                    <p:submenu label="Menu Novo">
+                        <p:menuitem value="Google" url="http://www.google.com" />
+                    </p:submenu>
+                    <p:submenu label="Menu Antigo">
+                        <p:menuitem value="Autor" url="autor/List"/>
+                        <p:menuitem value="Editora" url="editora/List"/>
+                        <p:menuitem value="Categoria" url="categoria/List"/>
+                        <p:menuitem value="Livro" url="livro/List"/>
+                        <p:menuitem value="Usuário" url="usuario/List"/>
+                    </p:submenu>
+                    <p:menuitem value="Welcome PrimeFaces" url="faces/welcomePrimefaces.xhtml"/>
+                    <p:submenu label="Resources PrimeFaces">
+                        <p:menuitem value="Demo" url="http://www.primefaces.org/showcase-labs/ui/home.jsf" />
+                        <p:menuitem value="Documentation" url="http://www.primefaces.org/documentation.html" />
+                        <p:menuitem value="Forum" url="http://forum.primefaces.org/" />
+                        <p:menuitem value="Themes" url="http://www.primefaces.org/themes.html" />
+
+                    </p:submenu>
+
+                </p:menu>
+
+            </p:layoutUnit>
+
+            <p:layoutUnit position="east" size="200">
+                <h:outputText value="Right Content" />
+            </p:layoutUnit>
+
+
+
+            <p:layoutUnit position="center">
+
+                <div class="ui-g">
+                    <div class="ui-g-1"></div>
+                    <div class="ui-g-10">
+                        <h2>A importância da leitura na vida do ser humano.</h2>
+                        <p>A leitura é algo crucial para a aprendizagem do ser humano, pois é através dela que podemos enriquecer nosso vocabulário, obter conhecimento, dinamizar o raciocínio e a interpretação. Muitas pessoas dizem não ter paciência para ler um livro, no entanto isso acontece por falta de hábito, pois se a leitura fosse um hábito rotineiro as pessoas saberiam apreciar uma boa obra literária, por exemplo.
+
+Muitas coisas que aprendemos na escola são esquecidas com o tempo, pois não as praticamos, através da leitura rotineira tais conhecimentos se fixariam de forma a não serem esquecidos posteriormente. Dúvidas que temos ao escrever poderiam ser sanadas pelo hábito de ler, talvez nem as teríamos, pois a leitura torna nosso conhecimento mais amplo e diversificado.
+
+Durante a leitura descobrimos um mundo novo, cheio de coisas desconhecidas.
+O hábito de ler deve ser estimulado na infância, para que o indivíduo aprenda desde pequeno que ler é algo importante e prazeroso, assim com certeza ele será um adulto culto, dinâmico e perspicaz. Saber ler e compreender o que os outros dizem nos difere dos animais irracionais, pois comer, beber e dormir até eles sabem, é a leitura que proporciona a capacidade de interpretação.
+Toda escola, particular ou pública, deve fornecer uma educação de qualidade incentivando a leitura, pois dessa forma a população se torna mais informada e crítica.</p>
+
+                        <h2>Sobre os Livros</h2>
+                        <p>O site fala sobre 5 grandes livros de sucesso e dá uma breve explicação sobre seus autores. Abaixo do texto você pode conferir a imagem da capa de cada livro que são: Jardim da Lua, Box Percy Jackson, O Alquimista, Poderoso Chefão, Harry Potter e as Reliquias da Morte.</p>
+                        
+                        <p:carousel autoPlayInterval="5000" effect="easeInStrong" circular="true"
+                                    itemStyle="width:50px" numVisible="1">
+                            <p:graphicImage value="/images/carousel/Jardins.jpg"/>
+                            <p:graphicImage value="/images/carousel/percy.jpg"/>
+                            <p:graphicImage value="/images/carousel/alqui.jpg"/>
+                            <p:graphicImage value="/images/carousel/chefe.jpg"/>
+                            <p:graphicImage value="/images/carousel/harry.jpg"/>
+                        </p:carousel>
+                        
+                    </div>
+                    <div class="ui-g-1"></div> 
+                </div>
+
+                
+
+            </p:layoutUnit>
+        </p:layout>
+
+    </h:body>
+
+
+
+</html>
+
